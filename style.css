@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+*{margin:0;padding:0;font-family: 'lato', sans-serif;}
+ul{list-style-type: none;}
+a:hover{text-decoration: none!important;}
+p{font-weight: 300;}
+
+/* espacamento */
+
+.espacamento {
+    background-image: url(img/linha-azul.png) ;
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    background-size: 70px 3px;
+    background-position: 0 8px;
+}
+
+
+/* cabeçalho com nav */
+header nav>a{
+    display: inline;
+    margin-right:490px;
+}
+header nav>a img{
+    width: 150px;
+}
+header nav{
+    text-align: right;
+    margin: 23px 0px 20px 0px;
+}
+header nav ul{
+    list-style: none;
+    display: inline-block;
+}
+header nav ul li{
+    display: inline;
+}
+header nav ul li a{
+    vertical-align: middle;
+    font-size: 25px;
+    color:#000;
+    font-weight: 300;
+    padding: 8px 10px;
+}
+header nav ul li a:hover{
+    background: rgba(206, 206, 206, 0.562);
+    text-decoration: none;
+}
+header nav ul li a img{
+    height: 35px;
+}
+header nav ul li a[href="portugues.html"]:hover{
+    background-color: #fff;
+}
+
+/* carroussel */
+.caption{
+    height: 245px;
+    width: 549px;
+    background: rgba(250, 250, 250, 0.877);
+    position: absolute;
+    top: 26%;
+    right: 0;
+    padding: 25px 85px 0px 16px;
+    border: 1px solid #bebebe3f;
+}
+.caption h3{
+    color: #2455af;
+}
+.caption p{
+    /* font-weight: 300;    */
+    font-size: 20px;
+}
+.painel{
+    height: 100%;
+    width:150px;
+    background: #fff;
+    position: absolute;
+    top:0;
+    right: 0
+}
+.carousel-control-prev{
+    bottom: auto;
+    left: auto;
+    right: 0px;
+    top: 25px;    
+}
+.carousel-control-prev-icon{
+    background: url(img/icone-seta.png) no-repeat;
+    width: 40px;
+    height: 70px;
+}
+.carousel-control-next{
+    top: auto;    
+    left: auto;
+    right: 0px;
+    bottom: 25px;
+}
+.carousel-control-next-icon{
+    background: url(img/icone-seta.png) no-repeat;
+    transform: rotate(0.5turn);
+    width:40px;
+    height: 70px;
+}
+
+/* cards */
+.servico{
+    margin-top: 40px;
+}
+.espacamento{
+padding-left: 100px;
+}
+.espacamento>h2,.espacamento>p{
+padding-right: 40%;
+}
+.espacamento h2{
+    color: #000
+}
+.folder{
+    background:#eeeeeec4;
+    margin-top:20px;
+}
+.titulo{
+    font-size: 20px ;
+    color: #2455af;
+    margin:0px 20px 0px;
+    padding:30px 0px 10px 0px;
+    border-bottom: #adaaaa solid 1px;
+}
+.corpo{
+    margin-top:20px;
+    padding-right: 20px;
+}
+.corpo p{
+    font-size: 17px;
+    /* font-weight: 300; */
+    margin-left: 20px;
+    padding-left: 28px;
+    background: url(img/icone-ok.png) no-repeat left;
+    background-size: 10px auto;
+}
+.corpo a{
+    padding: 7px 8px 7px 20px;
+    border: #98743569 2px solid;
+    display: block;
+    font-weight: 600;
+    font-size: 17px;
+    color: #584420;
+    background: url(img/icone-seta-saiba.png) no-repeat;
+    background-position: 95%;
+    transition:0.6s;
+}
+.corpo a:hover{
+    background: url(img/icone-seta-saiba-zazul.png) no-repeat;
+    background-position: 95%;
+    color: #234971;
+    border: #2349718e 2px solid;
+}
+.final{
+    padding: 30px 25px 15px;
+}
+ 
+
+/* PORTIFOLIO */
+
+.portifolio{
+    margin-top: 100px;
+    padding-top: 45px;
+    height: 320px;
+    background-color: #164c8c;
+    color: #fff;
+    font-size: 22px;
+    /* font-weight: 300; */
+}
+.portifolio .espacamento .col-3{
+    padding-top:35px;
+}
+.portifolio span{
+    font-weight: bold;
+}
+.cima{
+    height: 150px;
+}
+.redondo{
+    border-radius: 100%;
+    width:150px;
+    height: 150px;
+    margin-left: 41px;
+    padding-top: 20px;
+    background-color: #225896d0;
+    float:right;
+    text-align: center;
+}
+.baixo img{
+    width:250px;
+    float: right;
+    margin: 20px 0px 0px 30px;
+}
+
+/* Blog */
+.blog{
+    margin-top: 56px;
+}
+.blog h3{
+    font-size: 23px;
+    font-weight: 600;
+}
+.blog .carta{
+    border: #58442070 2px solid;
+    padding:0px 36px 10px;
+}
+.blog .carta .cabecalho{
+    color: #5e89b8;
+    padding-top: 35px;
+    font-weight: 600;
+}
+.blog .carta .rodape{
+    padding: 51px 0px 5px;
+}
+.blog .carta .rodape a{
+    color:#584420;    
+    font-weight: 600;
+}
+.blog iframe{
+    height: 318px;
+    width: 403px;
+}
+
+/* solicitacao de proposta */
+
+section.solicitacao{
+    margin-top: 40px;
+    background-color: #e6e6e6;
+    height: 160px;
+    padding-top: 45px; 
+    font-size: 20px;
+    /* font-weight: 300; */
+}
+.solicitacao a{
+    font-size: 17px;
+    color:#fff;
+    font-weight: 600;
+    background: #1460ee;
+    padding: 18px 139px;
+    border-radius: 4px;
+    transition: 0.5s;
+    position: relative;
+    top: 18px;
+}
+.solicitacao a:hover{
+    background: #164c8c;
+}
+
+/* rodape */
+footer{
+    background: #161616;
+    color: #fff;
+    height: 200px;
+    font-size: 14px;
+    /* font-weight: 300; */
+    padding-top: 60px;
+}
+footer p{
+    display: inline;
+}
+footer p:nth-child(1){
+    display: block;
+}
+footer img{
+    height: 60px;
+}
+footer .contato-redes {
+    text-align: right;
+}
+footer .contato-redes img{
+    width: 45px;
+    height: 45px;
+    margin-right: 9px;
+}
+footer .contato-redes p{
+    padding-top: 15px;
+    display: block;
+}
+
+/* banner */
+
+.banner{
+    position: relative;
+}
+.banner img{
+float: right;
+width: 92%;
+height: 500px;
+}
+.banner .caption{
+    top: 125px;
+    left:0;
+    height: 270px;
+    width:600px;
+    padding:30px 35px 0px 170px;
+}
+.banner .caption h3{
+    font-weight: 600;
+    font-size: 30px;
+}
+.banner .caption p{
+    font-size: 17px;
+    /* font-weight: 300; */
+}
+
+/* diferenciais */
+
+.diferenciais{
+    padding-top: 50px;
+    clear: both;
+}
+.diferenciais h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.diferenciais .espacamento .row>.col-3{
+    padding-left: 0px;
+}
+.diferenciais p{
+    padding-top: 5px;
+    font-size: 18px;
+    /* font-weight: 300; */
+}
+.diferenciais .espacamento li:nth-child(1){
+    border-top: 1px solid #cacaca94;
+}
+.diferenciais .espacamento li{
+    border-bottom: 1px dotted #cacaca94;
+    padding:5px 0px 5px 30px;
+    font-size: 18px;
+    /* font-weight: 300; */
+    background: url(img/icone-ok.png) no-repeat left;
+    background-size: 12px auto; 
+}
+
+
+/* qualificações */
+
+.time{
+    background-color:#004288;
+    color:#fff;
+    padding-top: 60px;
+    font-size: 22px;
+    /* font-weight: 300; */
+    position: relative;
+}
+.time span{
+    font-weight: 600;
+}
+.qualificacao .primeira{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    left: -23px;
+    z-index: 2;
+    color: #234971;
+    padding-top:3px;
+    padding-left:11px;
+    font-weight: 500;
+    font-size: 26px;
+}
+.qualificacao{
+    font-size: 16px;
+    position:relative;
+    border: 1px solid #c2c2c27a;
+    padding: 30px 20px 30px 30px;
+    margin:20px 10px 18px !important;
+}
+.qualificacao img{
+    height: 70px;
+}
+.selo-sap{
+    padding-bottom: 40px
+}
+.selo-sap img{
+    height: 75px;   
+    padding-left:9px;
+}
+
+/* Profissionais */
+
+.profissionais{
+    padding-top:40px;
+    padding-bottom: 60px;
+}
+.profissionais .cabecalho h2{
+    font-size: 26px;
+}
+.profissionais .cabecalho p{
+    font-size: 20px;
+    /* font-weight: 300; */
+}
+
+/* História */
+
+section.historia{
+background-color: #dfddddd0;
+padding-top: 60px;
+}
+.apresentacao h3{
+font-size: 20px;
+font-weight: 800;
+}
+.apresentacao p{
+font-size: 18px;
+/* font-weight: 300; */
+}
+
+.cronologia li{
+padding-left: 43px;
+margin-bottom:5px;
+background-image: url(img/bolinha_traco.png);
+background-repeat: no-repeat;
+background-size: 15px;
+}
+.cronologia li h4{
+font-size: 19px;
+font-weight: 600;
+}
+/* .cronologia li p{
+    font-weight: 300;
+} */
+.cronologia li p span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.cronologia li:nth-last-child(1){
+    background-image: url(img/bolinha_final.png);
+}
+
+/* principios organizacionais */
+.principios{
+    margin-top: 60px;
+}
+
+.principios h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.principios h4{
+    font-size: 19px;
+    font-weight: 500;
+}
+.principios p:nth-child(1){
+    font-size: 18px;
+}
+.principios ul{
+    margin:17px 0px 0px 35px;
+}
+.principios li{
+    font-weight: 300;
+    list-style-type: initial;
+}
+
+.principio{
+    border: #aa785a75 2px solid;
+    padding:30px 20px 10px 20px;
+    margin-top: 20px;
+}
+
+/* Blog */
+.blog-banner{
+    background-color: #dfdfdf69;
+    padding: 55px 0px;;
+}
+.blog-banner h2{
+    font-weight: 600;
+    font-size: 29px;
+}
+.blog-card{
+    border: 2px solid #aa795a4b;
+    padding: 0px;
+    margin-top:40px;
+    height: 340px;
+}
+.blog-card img{
+    width: 100%
+}
+.bg-card-corpo{
+    padding: 12px 25px;
+}
+.bg-card-corpo p{
+    margin: 0;
+}
+.bg-card-corpo p:nth-child(1){
+    color: #004288;
+    font-weight: 600;
+    font-size: 15px
+}
+.bg-card-rodape{
+    padding:0px 25px 20px;
+    position:absolute;
+    bottom: 0;
+}
+.bg-card-rodape a{
+    color:#3a2601;
+    font-weight: 600;
+    font-size: 16px
+}
+section.apresentacao{
+    margin: 150px 0px 50px 0px;
+}
+
+
+/* contato */
+
+.banner{
+    overflow: hidden;
+}
+.banner iframe{
+    float:  left;
+    width: 110%;
+    height: 620px;
+    margin-top:-115px;
+}
+
+.endereco .container:nth-child(2){
+    margin-top: 40px;
+}
+.endereco h3{
+    margin-top: -5px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.endereco-alternativo{
+    border: 2px solid #a7823d69;
+    padding: 16px 17px 22px;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+.endereco-alternativo h4{
+    padding-top:2px ;
+}
+.endereco-alternativo a{
+    color: #584420;
+    font-size: 18px;
+}
+.endereco-alternativo a:hover{
+    color: #584420;
+}
+.trabalhe-conosco{
+    background-color: #e7e7e77e;
+    padding: 60px 0px;
+    font-size: 18px;
+}
+.trabalhe-conosco h4{
+    margin-top: -4px;
+}
+
+.entre-contato{
+    margin: 40px 0px;
+}
+.entre-contato input{
+    width: 100%;
+    margin:5px 0px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 1px solid #70707085;
+    font-size: 18px;
+    font-weight: 200;
+}
+.entre-contato textarea{
+    border-radius: 6px;
+    border: 1px solid #70707085;
+    padding: 10px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+.entre-contato button{
+    margin: 10px 0px;
+    padding: 11px 35px;
+    background: #1460ee;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s
+}
+.entre-contato button:hover{
+    background: #1146a7;
+}
