@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 *{margin:0;padding:0;font-family: 'lato', sans-serif;}
-ul{list-style-type: none;}
+ul{list-style-type: none; margin: 0px; padding: 0px;}
 a:hover{text-decoration: none!important;}
 p{font-weight: 300;}
 
@@ -118,6 +118,9 @@ padding-right: 40%;
 .folder{
     background:#eeeeeec4;
     margin-top:20px;
+    position: relative;
+    border: 0;
+    height: 455px;
 }
 .titulo{
     font-size: 20px ;
@@ -126,37 +129,36 @@ padding-right: 40%;
     padding:30px 0px 10px 0px;
     border-bottom: #adaaaa solid 1px;
 }
-.corpo{
-    margin-top:20px;
-    padding-right: 20px;
-}
 .corpo p{
-    font-size: 17px;
-    /* font-weight: 300; */
-    margin-left: 20px;
     padding-left: 28px;
-    background: url(img/icone-ok.png) no-repeat left;
+    background: url(img/icone-ok.png) no-repeat top 9px left;
     background-size: 10px auto;
+
 }
-.corpo a{
-    padding: 7px 8px 7px 20px;
+.card-footer{
+    background-color: #f2f2f2;
+    border-top: 0;
+    padding-bottom: 32px;
+}
+.card-footer a{
+    padding: 14px 1rem; 
     border: #98743569 2px solid;
-    display: block;
     font-weight: 600;
-    font-size: 17px;
     color: #584420;
     background: url(img/icone-seta-saiba.png) no-repeat;
     background-position: 95%;
-    transition:0.6s;
+    transition: 0.6s;
+    padding: 10px 16px;
+    border: #67450b9c 2px solid;
+    display:block;
+    /* ao definir o display como block o elemento passa a assumir toda
+    a linha em que esta aninhado*/
 }
 .corpo a:hover{
     background: url(img/icone-seta-saiba-zazul.png) no-repeat;
     background-position: 95%;
     color: #234971;
     border: #2349718e 2px solid;
-}
-.final{
-    padding: 30px 25px 15px;
 }
  
 
@@ -177,21 +179,19 @@ padding-right: 40%;
 .portifolio span{
     font-weight: bold;
 }
-.cima{
-    height: 150px;
-}
 .redondo{
     border-radius: 100%;
-    width:150px;
+    width: 150px;
     height: 150px;
-    margin-left: 41px;
+    /* margin-left: 41px; */
     padding-top: 20px;
     background-color: #225896d0;
-    float:right;
+    /* float: right; */
     text-align: center;
 }
 .baixo img{
-    width:250px;
+    width:100%;
+    height: auto;
     float: right;
     margin: 20px 0px 0px 30px;
 }
@@ -257,7 +257,8 @@ footer{
     height: 200px;
     font-size: 14px;
     /* font-weight: 300; */
-    padding-top: 60px;
+    padding: 50px 0px 40px;;
+    height: auto;
 }
 footer p{
     display: inline;
@@ -266,7 +267,7 @@ footer p:nth-child(1){
     display: block;
 }
 footer img{
-    height: 60px;
+    width: 100%;
 }
 footer .contato-redes {
     text-align: right;
