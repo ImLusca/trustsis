@@ -1,0 +1,41 @@
+@media (max-width: 768px){
+    .container{
+        max-width: 96%;
+    }
+    .espacamento{
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    .titulo{
+        padding:20px 0px 10px 0px;
+    }
+    .folder{
+        font-size: 14px;
+        height: 392px;
+    }
+    .corpo p{
+        margin-bottom: 8px;
+    }
+    .blog iframe{
+        width: 100%;
+    }
+    .solicitacao{
+        text-align:center;
+    }
+    footer img{
+        margin-bottom: 20px;
+    }
+    .portifolio{
+        height: 485px;
+    }
+    .redondo{
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        /* margin-left: 41px; */
+        padding: 25%;
+        background-color: #225896d0;
+        /* float: right; */
+        text-align: center;
+    }
+}
