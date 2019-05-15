@@ -2,19 +2,24 @@
     .container{
         max-width: 96%;
     }
+    .portifolio .espacamento{
+        text-align: center;
+        background: none;
+    }
     .espacamento{
         padding-left: 0px;
-        padding-top: 15px;
+        padding-top: 30px;
     }
     .titulo{
         padding:20px 0px 10px 0px;
     }
     .folder{
         font-size: 14px;
-        height: 392px;
+        height: 412px;
     }
     .corpo p{
         margin-bottom: 8px;
+        font-size: 16px;
     }
     .blog iframe{
         width: 100%;
@@ -37,5 +42,70 @@
         background-color: #225896d0;
         /* float: right; */
         text-align: center;
+    }
+    .blog .carta{
+        height: 250px;
+    }
+    .blog .carta .rodape{
+        padding-top: 25px;
+    }
+    .historia .espacamento,.time .espacamento{
+        background: none;
+    }
+    .banner{
+        height: 421px;
+    }
+    .banner .caption{
+        top: 149px;
+        padding: 30px 35px 0px 70px;
+        height: 256px;
+        background: #fafafa;
+    }
+    .banner img{
+        width: 107%;
+        height: auto;
+    }
+    .painel{
+        display: none;
+    }
+    .diferenciais .espacamento li:nth-child(1){
+        border-top:0px;
+    }
+    .qualificacao{
+        padding: 15px 20px 20px 30px;
+    }
+    .qualificacao img{
+        width: 80%;
+        height: auto;
+    }
+    .mapa{
+        height: 555px;
+    }
+    .mapa iframe{ 
+        width: 113%;
+        height: 630px;
+        margin-top: -115px;
+    }
+    .mapa .caption{
+        top: 300px;
+        padding: 30px 35px 0px 70px;
+        height: 256px;
+        background: #fafafa;
+    }
+    .endereco-alternativo p{
+        margin-bottom: 0px;
+    }
+    .entre-contato #mensagem{
+        display: block;
+        width: 100%;
+    }
+    header nav button{
+        background-size: 20px;
+        height: 45px;
+        width: 45px;
+        padding:25px
+    }
+    header button:active{
+        border: 0px;
     }
 }

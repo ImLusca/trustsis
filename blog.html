@@ -6,31 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="principal">
-                    <img src="img/marca-trustsis.png" alt="Trustsis" title="Trustsis">
-                </a>
-                <ul>
-                    <li><a href="index.html">Serviços</a></li>
-                    <li><a href="empresa.html">Empresa</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="portugues.html"><img src="img/idioma-pt-br.png" alt="idioma-portugues"></a></li>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand mr-auto" href="index.html">
+                <img src="img/marca-trustsis.png" alt="Trustsis" title="Trustsis">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itens">
+                <span class="icone-reduzir"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="itens">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html">Serviços</a></li>
+                    <li class="nav-item"><a href="empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a href="portugues.html"><img src="img/idioma-pt-br.png" alt="idioma-portugues"></a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+</header>
 
     <section class="blog-banner">
         <div class="container">
             <div class="espacamento">
                 <div class="row">
-                    <h2>BLOG</h2>
+                    <div class="col-12"><h2>BLOG</h2></div>
+                    
                 </div>
             </div>
         </div>
@@ -39,7 +46,7 @@
     <section class="blog-corpo">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="blog-card">                        
                         <img src="img/blog-1.jpg" alt="imagem blog">
                         <div class="bg-card-corpo">
@@ -51,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="blog-card">                        
                         <img src="img/blog-1.jpg" alt="imagem blog">
                         <div class="bg-card-corpo">
@@ -63,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="blog-card">                        
                         <img src="img/blog-1.jpg" alt="imagem blog">
                         <div class="bg-card-corpo">
@@ -82,11 +89,11 @@
     <section class="apresentacao">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/L0UnpSAD1WY" frameborder="0"
                         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/H6J5wdZUxck" frameborder="0"
                         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
@@ -94,54 +101,61 @@
         </div>
     </section>
 
-
     <section class="solicitacao">
-            <div class="container">
-                <div class="row">
-                    <div class="col-7">
-                        Vamos fazer o <strong>seu projeto acontecer</strong>?
-                    </div>
-                    <div class="col-5">
-                        <a href="#">
-                            Solicite uma proposta
-                        </a>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    Vamos fazer o <strong>seu projeto acontecer</strong>?
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <a href="#">
+                        Solicite uma proposta
+                    </a>
                 </div>
             </div>
-        </section>
-        
-        <footer>
-            <div class="contato">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-7">
-                            <img src="img/selo-sap-01.png" alt="certificado sap">
-                            <img src="img/selo-sap-02.png" alt="certificado sap 2">
-                        </div>
-                        <div class="col-5">
-                            <div class="row">
-                                <div class="col-7">
-                                    <p>©Lucas Pacheco 2019</p>
-                                    <p>E-mail:<b>lucaspacheco747@gmail.com</b></p>
-                                    <p>Fone: <b>+55(11)96135-6738</b></p>
-                                </div>
-                                <div class="col-5 contato-redes">
-                                    <a href="#">
-                                        <img src="img/redes-facebook.png" alt="facebook">
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/redes-youtube.png" alt="youtube">
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/redes-linkedin.png" alt="linkedin">
-                                    </a>
-                                    <p>Recriado por: Lucas P. </p>
-                                </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12">    
+                        <div class="row">
+                            <div class="col-sm-6">
+                               <img src="img/selo-sap-01.png" alt="certificado sap">
+                           </div>
+                           <div class="col-sm-6">
+                               <img src="img/selo-sap-02.png" alt="certificado sap 2">
+                           </div>
+                        </div>        
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-6">
+                                <p>©Lucas Pacheco 2019</p>
+                                <p>E-mail:<b>lucaspacheco747@gmail.com</b></p>
+                                <p>Fone: <b>+55(11)96135-6738</b></p>
+                            </div>
+                            <div class="col-lg-5 col-sm-6 contato-redes">
+                                <a href="#">
+                                    <img src="img/redes-facebook.png" alt="facebook">
+                                </a>
+                                <a href="#">
+                                    <img src="img/redes-youtube.png" alt="youtube">
+                                </a>
+                                <a href="#">
+                                    <img src="img/redes-linkedin.png" alt="linkedin">
+                                </a>
+                                <p>Recriado por: Lucas P. </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+
+    
 </body>
 </html>

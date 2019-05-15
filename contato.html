@@ -6,29 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="principal">
-                    <img src="img/marca-trustsis.png" alt="Trustsis" title="Trustsis">
-                </a>
-    
-                <ul>
-                    <li><a href="index.html">Serviços</a></li>
-                    <li><a href="empresa.html">Empresa</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="portugues.html"><img src="img/idioma-pt-br.png" alt="idioma-portugues"></a></li>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand mr-auto" href="index.html">
+                <img src="img/marca-trustsis.png" alt="Trustsis" title="Trustsis">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itens">
+                <span class="icone-reduzir"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="itens">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html">Serviços</a></li>
+                    <li class="nav-item"><a href="empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a href="portugues.html"><img src="img/idioma-pt-br.png" alt="idioma-portugues"></a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+</header>
 
 <section class="endereco">
-    <div class="banner">
+    <div class="banner mapa">
         <div class="container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450.6033823812184!2d-46.76650141134021!3d-23.62973229638154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce540b2805f811%3A0xd520ddb6f53158f7!2sR.+C%C3%A9lso+Mesquita+Leite%2C+76+-+Jardim+Martinica%2C+S%C3%A3o+Paulo+-+SP%2C+05759-220!5e0!3m2!1spt-BR!2sbr!4v1557440962677!5m2!1spt-BR!2sbr"
               frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -47,18 +52,20 @@
     </div>
 
     <div class="container">
-        <div class="espacamento">
-            <div class="row">
-                <div class="col-12">
-                    <h3>OUTROS ENDEREÇOS</h3>
-                </div>
-            </div>
-            <div class="endereco-alternativo">
+        <div class="card-body">
+            <div class="espacamento">
                 <div class="row">
-                    <div class="col-2"><h4>São Paulo</h4></div>
-                    <div class="col-5"><p>Rua Celso Mesquita Leite nº88 Campo Limpo</p></div>
-                    <div class="col-3"><p>Fone:<b>96135-6738</b></p></div>
-                    <div class="col-2"><a href="#">Ver no mapa</a></div>
+                    <div class="col-lg-12 ">
+                        <h3>OUTROS ENDEREÇOS</h3>
+                    </div>
+                </div>
+                <div class="endereco-alternativo">
+                    <div class="row">
+                        <div class="col-lg-2 col-sm-4"><h4>São Paulo</h4></div>
+                        <div class="col-lg-5 col-sm-8"><p>Rua Celso Mesquita Leite nº88 Campo Limpo</p></div>
+                        <div class="col-lg-3 col-sm-4 offset-sm-4"><p>Fone:<b>96135-6738</b></p></div>
+                        <div class="col-lg-2 col-sm-12 offset-sm-4"><a href="#">Ver no mapa</a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,17 +77,17 @@
     <div class="container">
         <div class="espacamento">
             <div class="row">
-                <div class="col-12">
+                <div class="col-lg-12">
                     <h4>
                         TRABALHE CONOSCO
                     </h4>  
                 </div>
             </div>
             <div class="row">
-                 <div class="col-5">
-                     <p>Oportunidades de Carreiras na Trustsis. Faça <br> parte do melhor time de consultoria GRC da <br> América Latina.</p>
-                 </div>
-                 <div class="col-7"><b>NENHUMA VAGA DISPONIVEL NO MOMENTO</b></div>
+                <div class="col-lg-5">
+                    <p>Oportunidades de Carreiras na Trustsis. Faça <br> parte do melhor time de consultoria GRC da <br> América Latina.</p>
+                </div>
+                <div class="col-lg-7"><b>NENHUMA VAGA DISPONIVEL NO MOMENTO</b></div>
             </div>
         </div>
     </div>
@@ -90,22 +97,22 @@
     <div class="container">
         <div class="espacamento">
             <div class="row">
-                <div class="col-12">
+                <div class="col-lg-12">
                     <h4>
                         ENTRE EM CONTATO
                     </h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-7">
+                <div class="col-lg-7">
                     <fieldset>
                         <input type="text" name="nome" id="nome" placeholder="Nome">
                         <input type="text" name="email" id="email" placeholder="Email">
-                        <textarea name="mensagem" id="mensagem" cols="69" rows="5"></textarea>
+                        <textarea name="mensagem" id="mensagem" col-lgs="69" rows="5"></textarea>
                         <button type="submit">Enviar</button>
                     </fieldset>
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5">
                     <img src="img/contato.jpg" alt="conato">
                 </div>
             </div>
@@ -115,10 +122,10 @@
 <section class="solicitacao">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-lg-7 col-sm-12">
                     Vamos fazer o <strong>seu projeto acontecer</strong>?
                 </div>
-                <div class="col-5">
+                <div class="col-lg-5 col-sm-12">
                     <a href="#">
                         Solicite uma proposta
                     </a>
@@ -131,18 +138,24 @@
         <div class="contato">
             <div class="container">
                 <div class="row">
-                    <div class="col-7">
-                        <img src="img/selo-sap-01.png" alt="certificado sap">
-                        <img src="img/selo-sap-02.png" alt="certificado sap 2">
-                    </div>
-                    <div class="col-5">
+                    <div class="col-lg-5 col-sm-12">    
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-sm-6">
+                               <img src="img/selo-sap-01.png" alt="certificado sap">
+                           </div>
+                           <div class="col-sm-6">
+                               <img src="img/selo-sap-02.png" alt="certificado sap 2">
+                           </div>
+                        </div>        
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-6">
                                 <p>©Lucas Pacheco 2019</p>
                                 <p>E-mail:<b>lucaspacheco747@gmail.com</b></p>
                                 <p>Fone: <b>+55(11)96135-6738</b></p>
                             </div>
-                            <div class="col-5 contato-redes">
+                            <div class="col-lg-5 col-sm-6 contato-redes">
                                 <a href="#">
                                     <img src="img/redes-facebook.png" alt="facebook">
                                 </a>
